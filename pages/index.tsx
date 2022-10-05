@@ -4,7 +4,8 @@ const IndexPage = () => (
   <>
     <Head>
       <title>
-        Hey, I&apos;m Lucas {process.env.NODE_ENV !== "production" && "(dev)"}
+        Hey, I&apos;m Lucas{" "}
+        {process.env.NODE_ENV !== "production" ? "(dev)" : ""}
       </title>
     </Head>
     <main>
