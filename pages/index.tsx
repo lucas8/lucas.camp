@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { Box } from "../components/Box";
 
 const IndexPage = () => (
   <>
@@ -9,11 +10,11 @@ const IndexPage = () => (
       </title>
     </Head>
     <main>
-      <h1>
+      <Box px={4}>
         To collaborate on a project, please feel free to shoot an email or reach
         out on any of the platforms below. In the interest of transparency, my
         typical lead time for taking on new work is 6 weeks.
-      </h1>
+      </Box>
     </main>
   </>
 );

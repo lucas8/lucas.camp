@@ -1,21 +1,21 @@
 import { createGlobalTheme } from "@vanilla-extract/css";
 
-const colors = {
+export const colors = {
   text: "#fff",
   background: "#1D4A14",
 };
 
-const space = {
-  "1": "0.25rem",
-  "2": "0.5rem",
-  "3": "0.75rem",
-  "4": "1rem",
-  "5": "1.25rem",
-  "6": "1.5rem",
-  "7": "1.75rem",
-  "8": "2rem",
-  "9": "2.25rem",
-  "10": "2.5rem",
+export const space = {
+  1: "0.25rem",
+  2: "0.5rem",
+  3: "0.75rem",
+  4: "1rem",
+  5: "1.25rem",
+  6: "1.5rem",
+  7: "1.75rem",
+  8: "2rem",
+  9: "2.25rem",
+  10: "2.5rem",
   auto: "auto",
   full: "100%",
   fit: "fit-content",
@@ -26,15 +26,15 @@ const space = {
   none: "0",
 };
 
-const fonts = {
+export const fonts = {
   ppEditorialNew: "PP Editorial New, serif",
 };
 
-const lineHeights = {
+export const lineHeights = {
   body: "1.2",
 };
 
-const fontWeights = {
+export const fontWeights = {
   light: "300",
   normal: "400",
   medium: "500",
@@ -42,7 +42,7 @@ const fontWeights = {
   bold: "700",
 };
 
-const fontSizes = {
+export const fontSizes = {
   body: "2rem",
 };
 
