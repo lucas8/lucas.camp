@@ -3,6 +3,7 @@ import { createGlobalTheme } from "@vanilla-extract/css";
 export const colors = {
   text: "#fff",
   background: "#1D4A14",
+  stroke: "#ffffff20",
 };
 
 export const space = {
@@ -46,6 +47,19 @@ export const fontSizes = {
   body: "2rem",
 };
 
+export const borderStyles = {
+  none: "none",
+  solid: "solid",
+};
+
+export const borderWidths = {
+  px: "1px",
+};
+
+export const borderRadii = {
+  0: "0",
+};
+
 export const vars = createGlobalTheme(":root", {
   colors,
   space,
@@ -53,4 +67,7 @@ export const vars = createGlobalTheme(":root", {
   lineHeights,
   fontWeights,
   fontSizes,
+  borderStyles,
+  borderWidths,
+  borderRadii,
 });

@@ -1,5 +1,5 @@
 import { defineProperties, createSprinkles } from "@vanilla-extract/sprinkles";
-import { space, fontSizes, colors } from "./theme.css";
+import { space, fontSizes, colors, borderRadii } from "./theme.css";
 
 const responsiveProperties = defineProperties({
   conditions: {
@@ -26,10 +26,10 @@ const responsiveProperties = defineProperties({
     paddingBottom: space,
     paddingLeft: space,
     paddingRight: space,
-    marginTop: ["auto"],
-    marginRight: ["auto"],
-    marginBottom: ["auto"],
-    marginLeft: ["auto"],
+    marginTop: space,
+    marginRight: space,
+    marginBottom: space,
+    marginLeft: space,
     gap: space,
     rowGap: space,
     columnGap: space,
@@ -57,15 +57,29 @@ const responsiveProperties = defineProperties({
   },
 });
 
-const colorProperties = defineProperties({
+const unresponsiveProperties = defineProperties({
   properties: {
     color: colors,
-    borderRadius: [0],
+    background: colors,
+    borderRadius: borderRadii,
+    top: [0],
+    bottom: [0],
+    left: [0],
+    right: [0],
     flexShrink: [0],
     flexGrow: [0, 1],
+    zIndex: [-1, 0, 1],
+    width: { full: "100%" },
+    cursor: ["pointer"],
+  },
+  shorthands: {
+    inset: ["top", "bottom", "left", "right"],
   },
 });
 
-export const sprinkles = createSprinkles(responsiveProperties, colorProperties);
+export const sprinkles = createSprinkles(
+  responsiveProperties,
+  unresponsiveProperties
+);
 
 export type Sprinkles = Parameters<typeof sprinkles>[0];

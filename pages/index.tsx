@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Box } from "../components/Box";
+import { Navbar } from "../components/Navbar";
 
 const IndexPage = () => (
   <>
@@ -9,6 +10,7 @@ const IndexPage = () => (
         {process.env.NODE_ENV !== "production" ? "(dev)" : ""}
       </title>
     </Head>
+    <Navbar />
     <main>
       <Box px={4}>
         To collaborate on a project, please feel free to shoot an email or reach
