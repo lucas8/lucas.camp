@@ -13,14 +13,7 @@ const responsiveProperties = defineProperties({
     position: ["relative", "absolute"],
     display: ["none", "flex", "grid", "block", "inline"],
     flexDirection: ["row", "row-reverse", "column"],
-    justifyContent: [
-      "stretch",
-      "flex-start",
-      "center",
-      "flex-end",
-      "space-around",
-      "space-between",
-    ],
+    justifyContent: ["stretch", "flex-start", "center", "flex-end", "space-around", "space-between"],
     alignItems: ["stretch", "flex-start", "center", "flex-end"],
     paddingTop: space,
     paddingBottom: space,
@@ -77,9 +70,6 @@ const unresponsiveProperties = defineProperties({
   },
 });
 
-export const sprinkles = createSprinkles(
-  responsiveProperties,
-  unresponsiveProperties
-);
+export const sprinkles = createSprinkles(responsiveProperties, unresponsiveProperties);
 
 export type Sprinkles = Parameters<typeof sprinkles>[0];

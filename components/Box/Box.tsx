@@ -4,10 +4,7 @@ import { sprinkles } from "../../styles/sprinkles.css";
 import clsx from "clsx";
 
 export interface BoxProps
-  extends Omit<
-      AllHTMLAttributes<HTMLElement>,
-      "content" | "height" | "translate" | "color" | "width" | "cursor"
-    >,
+  extends Omit<AllHTMLAttributes<HTMLElement>, "content" | "height" | "translate" | "color" | "width" | "cursor">,
     Sprinkles {
   component?: ElementType;
 }

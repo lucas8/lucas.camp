@@ -11,18 +11,8 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="shortcut icon" href="/static/favicon.ico" />
-          <link
-            as="font"
-            crossOrigin="anonymous"
-            href="/static/fonts/PPEditorialNew-Regular.woff"
-            rel="preload"
-          />
-          <link
-            as="font"
-            crossOrigin="anonymous"
-            href="/static/fonts/PPEditorialNew-Regular.woff2"
-            rel="preload"
-          />
+          <link as="font" crossOrigin="anonymous" href="/static/fonts/PPEditorialNew-Regular.woff" rel="preload" />
+          <link as="font" crossOrigin="anonymous" href="/static/fonts/PPEditorialNew-Regular.woff2" rel="preload" />
         </Head>
         <body>
           <Main />
