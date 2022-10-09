@@ -5,6 +5,7 @@ globalStyle("#__next", {
   fontFamily: vars.fonts.ppEditorialNew,
   color: vars.colors.text,
   background: vars.colors.background,
+  backgroundColor: vars.colors.background,
   height: vars.space.full,
   lineHeight: vars.lineHeights.body,
   fontSize: vars.fontSizes.body,
